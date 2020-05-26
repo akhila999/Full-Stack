@@ -1,5 +1,3 @@
  html and css 
 database 
-java 
-jquery
 full stack 
