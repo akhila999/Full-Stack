@@ -1,0 +1,24 @@
+a{
+    color: royalblue;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 10px;
+    text-align: center;
+}
+a:link{
+    color:red;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 10px;
+    text-align: center;
+}
+a:hover{
+    color: rgb(202, 235, 15);
+    background-color: seagreen;
+    font-size: large;
+    text-decoration: none;
+    text-align: center;
+}
+a:active{
+    color: steelblue;
+}
