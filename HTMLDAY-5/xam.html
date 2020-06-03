@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+function fun()
+{
+   var a,b;
+ a=document.getElementById("t1").value;
+ b=document.getElementById("t2").value;
+ if(a=="admin"&&b=="admin")
+ {
+         window.alert("succesful login");   
+ }
+ else{
+     window.alert("unsuccesful login");
+ }
+}
+    </script>
+</head>
+<body>
+ UN <input type='text' id="t1"><br>
+ PWD <input type="text" id="t2"><br>
+<button type='button' onclick="fun()">CHECK</button>
+</body>
+</html>

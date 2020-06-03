@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> validate mobile no</title>
+        <script>
+            function validatemob()
+            {
+                var val=document.getElementById("txt").value;
+                if(/^[6-9][0-9]{9}$/.test(val))
+                {
+                   window.alert("valid number");
+                }
+                else{
+                    window.alert(" invalid number");
+                    document.getElementById("txt").focus(); 
+                }
+            }
+            </script>
+    </head>
+    <body>
+       <input type="text" id="txt"><br>
+       <button type="button" onclick="validatemob()">validate</button>
+    </body>
+</html>
