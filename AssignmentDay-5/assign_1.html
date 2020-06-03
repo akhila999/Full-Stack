@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>password validation</title>
+        <script>
+            function validate()
+            {
+                var p=document.getElementById("pass").value;
+                pass=/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%]).{6,15}$/;
+                if(p=="")
+                {
+                    window.alert(" eneter the password");
+
+                }
+                else{
+                    if(pass.test(p))
+                    {
+                        window.alert(" valid");
+                    }
+                    else
+                    {
+                        window.alert("invalid");
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="pass" placeholder="enter password"><br><br>
+        <button type="button" onclick="validate()">validate</button>
+    </body>
+</html>
