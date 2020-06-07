@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COLLEGE PORTAL</title>
+        <link href="style.css" rel="StyleSheet">
+        <script src="pro.js"></script>
+    </head>
+    <body>
+        <div id="main">
+               <a href=""><img src="bbimg.jpg" height="100px" width="100px" /></a>
+                <a href=""><font color="black" size="+4">COLLEGE PORTAL</font></a><!--font tag is used to change font color-->
+               <a href=""><img src="ccimg.jpg" height="100px" width="100px" /></a>
+        </div>
+        <div>
+                <ul>
+                <a href="home.html"><li><font size="+3">Home</font></li></a>
+               <a href="aboutus.html"><li><font size="+3">About us</font></li></a>
+               <a href="contacus.html"><li><font size="+3">Contact us</font></li></a>
+               <a href="login.html"><li><font size="+3">Login</font></li></a>
+               <a href="register.html"><li><font size="+3">Register</font></li></a>
+                <a href="feedback.html"><li><font size="+3">Feedback</font></li></a>
+            </ul>
+        </div>
+        <div id="app1">
+            <div style="text-align: center;">
+                <h1>REGISTRATION FORM<hr /></h1>
+            </div>
+         <div id="user1">
+             <div>NAME</div>
+             <div><input type="text" placeholder="name" id="rusername" required></div>
+         </div>
+         <div id="pass1">
+          <div>EMAIL</div>
+          <div><input type="email" placeholder="email" id="remail" required></div>
+            </div>
+            <div id="num1">
+                <div>PH.NO</div>
+                <div><input type="text" placeholder="+91 xxxxxxxxxx" id="rphonenumber" required></div>
+            </div>
+            <div id="num1">
+                <div>DATE OF BIRTH</div>
+                <div><input style="width: 160px;" type="date" id="dob" required></div>
+            </div>
+            <div id="num1">
+                <div>YEAR OF PASSOUT</div>
+                <div><select style="width:164.5px;" id="yopo" required><option>2020</option><option>2021</option><option>2022</option></select></div>
+            </div>
+            <div id="num1">
+                <div>JOINING YEAR</div>
+                <div><select style="width:164.5px;" id="jy" required><option>2016</option><option>2017</option><option>2018</option></select></div>
+            </div>
+            <div id="num1">
+                <div>DEPARTMENT</div>
+                <div><select style="width:164.5px;" id="dept" required><option>ECE</option><option>CSE</option><option>Mech.</option><option>AERO</option><option>EEE</option></select></div>
+            </div>
+            <div id="num1">
+                <div>PIN NO</div>
+                <div><input type="text" placeholder="12 digit pin number" id="rpinnum" required></div>
+            </div>
+          <p style="text-align: center;"><button style="margin: 10px;" onclick="myreg()">REGISTER</button><button style="margin: 10px;" onclick="myCancel()">CANCEL</button></p>
+     </div>
+    </body>
+</html>

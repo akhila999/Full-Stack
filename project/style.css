@@ -1,0 +1,81 @@
+<!-- -->
+#main{
+    border: solid black;
+    display: flex;/*flex is similar to auto adjusting div*/
+    flex-flow: row;/*used to place all the elments in a row*/
+    justify-content: space-between;/*used to maintain space in between the items*/
+    align-items: center; /** this used put all the elements in a same line*/
+}
+#main a{
+    text-decoration: none;
+    text-decoration-color: black;
+}
+#main1{
+    border: solid black;
+    display: flex;/*flex is similar to auto adjusting div*/
+    flex-flow: row;/*used to place all the elments in a row*/
+    justify-content: space-between;/*used to maintain space in between the items*/
+    align-items: center; /** this used put all the elements in a same line*/
+} 
+#main1 a{
+    text-decoration: none;
+    text-decoration-color: black;
+        height: 200px;
+        width: 200px;
+}
+ul{
+    list-style-type: none;
+    border:2px solid black;
+    background-color: lightskyblue;
+}
+ul a{
+    display: inline-block;
+    color:solid black;
+    margin: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+}
+ul a:hover{
+    color: orangered;
+    background-color: lightgoldenrodyellow;
+    font-size: large;
+}
+ul a:active{
+    color: goldenrod;
+}
+#feed{
+    margin: auto;
+
+}
+#user1{
+    display: flex;
+    justify-content: initial;
+    justify-content: space-between;
+    margin: 20px;
+}
+#pass1{
+    display: flex;
+    justify-content: initial;
+    justify-content: space-between;
+    margin: 20px;
+}
+#app1{
+    width: max-content;
+
+}
+#num1{
+    display: flex;
+    justify-content: initial;
+    justify-content: space-between;
+    margin: 20px;
+}
+#msg1{
+    display: flex;
+    justify-content: initial;
+    justify-content: space-between;
+    margin: 20px;
+}
+input{
+    margin-left: 100px;
+}
