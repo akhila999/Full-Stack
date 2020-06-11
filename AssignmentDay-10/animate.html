@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>jquery animi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.min.css">
+        <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+        <script type="text/javascript" src="jqueryui/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            
+$( "#btn1" ).click(function() {
+  $( "#box" ).animate({width: "300px",height: "300px",}, 1000 );
+});
+$( "#btn2" ).click(function() {$( "#box" ).animate({width: "100px",height: "100px",}, 1000 );
+});
+});
+        
+        </script>
+        
+    </head>
+    <body>
+        <button id="btn1">Animate height & width</button>
+        <button id="btn2">Reset</button>
+        <div id="box" style="background:yellow;height:100px;width:100px;margin:6px;">
+        <p>hello world</p></div>
+        
+    </body>
+</html>
