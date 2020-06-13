@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>fading effect</title>
+
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#btntoggle").click(function(){
+
+                    $("#id1").fadeToggle(2000);
+
+                });
+
+            });
+
+        </script>
+
+    </head>
+
+    <body class="container">
+
+        <table class="table table-dark" id="id1">
+
+            <thead>
+
+              <tr>
+
+                <th scope="col">Home</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr>
+
+                <th scope="row">Products</th>
+
+              </tr>
+
+              <tr>
+
+                <th scope="row">Services</th>
+
+              </tr>
+
+              <tr>
+
+                <th scope="row">About</th>
+
+              </tr>
+
+              <tr>
+
+                  <th scope="row">Contact</th>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+          <button type="button" id="btntoggle">Execute fadeing</button>
+
+    </body>
+
+</html>
