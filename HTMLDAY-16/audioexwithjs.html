@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> audio ex with js</title>
+        <script type="text/javascript">
+            
+            var audio_info = document.getElementById("audio1");
+            document.getElementById('play').addEventListener('click',function(){
+                audio_info.play();
+            },false);
+            document.getElementById('stop').addEventListener('click',function(){
+                audio_info.pause();
+            },false);
+           
+        </script>
+    </head>
+    <body>
+        <audio id="audio1">
+        <source src="sample.mp3" type="audio/mp3" >
+            </audio>
+            <p>click the buttons  </p>
+            <button id="play" >play</button>
+            <button id="stop">stop</button>
+    </body>
+</html>

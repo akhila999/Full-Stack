@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> geo location</title>
+    </head>
+    <body>
+        <button onclick='getLocation()'>get location</button>
+        <script>
+            function  getLocation(){
+                debugger
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                 }
+                 else
+                 {
+                     window.alert('error message');
+                 }
+
+                }
+                function showPosition(position){
+                    window.alert(position.coords.latitude+ " " + position.coords.longitude);
+                }
+           
+        </script>
+    </body>
+</html>
