@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+
+                $("#btnSubmit").click(function(){
+                    debugger;
+                    var api_url = "http://localhost:3000/user";
+                    var data = {
+                        email : $('#txtEmail').val(),
+                        u_password : $('#txtpass').val(),
+                        phonenumber : $('#txtphone').val(),
+                        address : $('#txtadd').val(),
+                        username : $('#txtusrname').val(),
+                    }
+                    $.ajax({
+                        url : api_url,
+                        type:"POST",
+                        dataType:"json",
+                        data:data,
+                        success:function(d){
+                            alert('values are submited');
+                        },
+                        error:function(){
+                            alert('wrong with insertion');
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txtEmail" placeholder="EmailId" /><br/>
+        <input type="text" id="txtpass" placeholder="password"/><br/>
+        <input type="number" id="txtphone" placeholder="phonenumber" /><br/>
+        <input type="address" id="txtadd" placeholder="address"/><br/>
+        <input type="text" id="txtusrname" placeholder="username"/><br/>
+        <button type="button" id="btnSubmit" >Submit</button>
+    </body>
+</html>
