@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Project</title>
+<link href='admin.css' rel="stylesheet">
+<script src='admin.js'></script>
+<link href="admin1.css" rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<script src="ad.js"></script>
+<script src="admin.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $("#btn").click(function(){
+          debugger;
+          if($('#username').val() == "") 
+              {
+                  swal({
+                      text:"Enter Username",
+                      icon:"error"
+                  });
+                  return false;
+              }
+              else if ($('#password').val() == "")
+              {
+                  swal({
+                      text:"Enter Password",
+                      icon:"error"
+                  });
+                  return false;
+              }
+              else 
+              {
+              var api_url = "http://localhost:3000/register";
+              var data = {
+              username: $('#username').val(),
+              password: $('#password').val(),
+              }
+              $.ajax({
+                  
+                  type:"POST",
+                  url:api_url,
+                  dataType:"json",
+                  data:JSON.stringify(data),
+                  contentType:"application/json; charset=utf-8",
+                  success:function(d){
+                      if(d.code==400){
+                          swal({
+                          text:"Invalid Username or password",
+                          icon:"error"
+                      });
+                      return false;
+                      }
+                      window.location.href = './../booking/book.html';
+                
+
+                     
+                  },
+                  error:function(d){
+                      swal({
+                          text:"Invalid Username or password",
+                          icon:"error"
+                      });
+                  }
+              })
+                   
+          }
+              
+      });
+  });
+</script>
+</head>
+<body>
+  <div class="cotn_principal">
+<div class="cont_centrar">
+
+  <ul>
+    <li><a href="./../home/index1.html">Home</a></li>
+    <li class="active"><a href="./../admin/admin.html">Admin</a></li>
+    <li><a href="./../user/user.html">User</a></li>
+    <li><a href="./../contact us/contact.html">Contact us</a></li>
+    <li> <a href="./../feedback/feedback.html">Feedback</a></li>
+ 
+    
+</ul>
+
+  <div class="cont_login">
+<div class="cont_info_log_sign_up">
+  <!-- LOGIN -->
+      <div class="col_md_login">
+<div class="cont_ba_opcitiy">
+        
+        <h2>LOGIN</h2>  
+  <p></p> 
+  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+  </div>
+    <!-- SIGNUP -->
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <h2>SIGN UP</h2>
+
+  
+  <p></p>
+
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+</div>
+  </div>
+       </div>
+
+    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="im.jfif" alt="" />
+       </div>
+       
+    </div>
+    
+<div class="cont_forms" >
+    <div class="cont_img_back_">
+       <img src="im.jfif" alt="" />
+       </div>
+ <div class="cont_form_login">
+<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+   <h2>LOGIN</h2>
+ <input type="text" placeholder="username" id="username" />
+<input type="password" placeholder="Password" id="password" />
+<button class="btn_login" onclick="cambiar_login()" id="btn">LOGIN</button>
+  </div>
+  
+   <div class="cont_form_sign_up">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+     <h2 >SIGN UP</h2>
+
+<!--<input type="text"  id="username" placeholder="Username" />
+<input type="password" id="password" placeholder="Password" />
+<input type="password"  id="retype_password" placeholder="Confirm Password" />
+<input type="text"  id="number" placeholder="phone number" />-->
+ <a href="./../registration/regis.html"   id="btn1" onclick="return valid()" style="color:white ;"   >TO REGISTER CLICK HERE!</a> >
+
+  </div>
+
+    </div>
+    
+  </div>
+ </div>
+</div>
+  
+  
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link href="book.css" rel="stylesheet">
+<link href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="StyleSheet"/>
+
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="StyleSheet" />
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    window.open('gpay.html');
+                });
+                $("#btn2").click(function(){
+                    window.open('paytm.html');
+                });
+                $("#btn3").click(function(){
+                    window.open('phonepe.html');
+                });
+            });
+                </script>
+</head>
+<body>
+    <ul>
+        <li ><a href="./../home/index1.html"> Cancel Booking</a></li>
+        <li class="active" ><a href="./../booking/payment.html">Payment</a></li>
+        <li><a href="./../contact us/contact.html">Contact us</a></li>
+        <li> <a href="./../feedback/feedback.html">Feedback</a></li>
+    </ul>
+    <br><br><br><br>
+
+    <div class="container">
+        <div class="row" id="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <form action="" method="POST"  class="form" >
+                    <h3 style="text-align: center;">Select Payment Method</h3><br /><br>
+                    
+                   <br /><br />
+                    <div>
+                        <a><b>Wallets</b></a>
+                        <button type="button" class="btn btn-light" id="btn1" style="width: 100%;">
+                            <img src="Gpay.jpg" height="35px" width="35px">        <b>GPay</b></button>
+                        <button type="button" class="btn btn-light" id="btn2" style="width: 100%;">
+                            <img src="paytm.jpg" height="35px" width="35px">        <b>Paytm</b></button>
+                        <button type="button" class="btn btn-light" id="btn3" style="width: 100%;">
+                            <img src="phonepe.jpg" height="35px" width="35px">       
+                             <b>Phonepe</b></button>
+                    </div>
+                </form>
+            </div>
+            </div>
+            </div>
+        
+</body>
+</html>

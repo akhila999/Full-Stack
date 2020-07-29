@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 	<title>Project</title>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">	
+	<script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="Style.css">
+	<link rel="stylesheet" href="feedstl.css">
+	<script src="feed.js" ></script>
+
+</head>
+
+<body>	
+	
+<div class="view">
+	<img src="33.jpg">
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			
+			<ul>
+                <li ><a href="./../home/index1.html">Home</a></li>
+                <li><a href="./../admin/admin.html">Admin</a></li>
+                <li><a href="./../user/user.html">User</a></li>
+                <li><a href="./../contact us/contact.html">Contact us</a></li>
+                <li class='active'> <a href="./../feedback/feedback.html">Feedback</a></li>
+			</ul>
+			
+			<h1 class="text-center mt-5 font-weight-bold">Feedback</h1>
+			<hr class="bg-white">
+			<h3 class="mt-4 margin-bottom:50px;">Please write your feedback below:</h3><br>
+			
+			</div>
+			</div>					
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-8">Full Name*<br>
+					<input type="text" id="name" required="" placeholder="enter name"></label>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+					<label class="col-md-8">Email*<br>
+					<input type="text" id="email" required="" placeholder="enter email-id"></label>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-8">Message*<br>
+					<textarea id="feed_back" required="" placeholder="write your message here" cols="48" rows="5"></textarea></label>
+			</div>
+
+						<div class="row">
+				<div class="col-md-2"></div>
+				<button class="btn btn-primary" id="btn" onclick= "return valid()" style="width:58%; position: absolute; margin-left: 16.25%;">Submit</button>
+			</div>
+			
+</div>
+
+</body>
+</html>  

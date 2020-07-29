@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup</title>
+        <link href="reg.css" rel="StyleSheet" />
+        <link href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="StyleSheet" />
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/bootstrap.min.js" ></script>
+        <script src="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="StyleSheet" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="regis.js"></script>
+        
+        
+    </head>
+    <body>
+        <body style="background-color: black;">
+            <div class="container-fluid">
+                <div class="row" id="row1">
+                    <div class="col-md-2">
+                    
+    
+                    </div>
+                    <div class="col-md-8" id="a">
+                        <h2 style="text-align: center;">RFID Parking System</h2>
+    
+                    </div>
+                    
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <form  method="POST"  class="form"  >
+                        <h3 style="text-align: center;">Sign up</h3>
+                        <div class="form-group">
+                            <label for="First Name">First Name*</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name"  />
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="Last Name">Last Name*</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" />
+                        </div>
+                        <div class="form-group" >
+                            <label for="Username">Create Username*</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter Username"  /> 
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Create Password*</label>
+                            <input type="text" class="form-control" id="password" placeholder="Enter Password" />
+                            <small id="passwordHelpBlock" class="form-text text-muted" style="color: black">
+                                Your password must be 8-20 characters long, should contain upper case and lower case letters, numbers and special characters.
+                              </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Confirm Password*</label>
+                            <input type="text" class="form-control" id="retype_password" placeholder="Confirm Password"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="Number">Phone Number*</label>
+                            <input type="number" class="form-control" id="number" placeholder="Enter Phone Number" />
+                        </div>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="terms">By signing up to {this} you agree to your
+                            <a href="#service"><b>Term of service</b></a> and <a href="#policy"><b>Privacy Policy</b></a>
+                        </label>
+                        <button type="button" class="btn btn-primary" id="btn" style="width: 100%; color:black; background-color: white;" onclick="return valid()">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

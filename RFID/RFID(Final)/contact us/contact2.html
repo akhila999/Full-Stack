@@ -1,0 +1,68 @@
+<title>Project</title>
+<link href="contact2.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap%22%20rel=%22stylesheet%22">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<script src="contact2.js"></script>
+
+<meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       
+        <link rel="stylesheet" href="nav.css">
+        <nav>
+            <div class="logo">
+                <h3>           </h3>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="./../home/index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="./../admin/admin.html">Admin</a>
+                </li>
+                <li>
+                    <a href="./../user/user.html">User</a>
+                </li>
+                <li class="active">
+                    <a href="./../contact us/contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a href="./../feedback/feedback.html">Feedback</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+<div class="container"> 
+   
+    <form id="contact" action="" method="post">
+      <h3>Quick Contact</h3>
+      <h4>Contact us today, and get reply with in 24 hours!</h4>
+      <fieldset>
+        <input placeholder="Your name" id="name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" id="email" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number" type="tel" id="phonenumber" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your Message Here...." id="textarea" tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+         
+        <button name="submit" type="submit" id="contact-submit"  data-submit="...Sending" onclick="return valid()">Submit</button>
+      </fieldset>
+    </form>
+   
+    
+  </div>
